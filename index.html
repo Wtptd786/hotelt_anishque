@@ -3,46 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Tanishque | Premium Family Restaurant in Nashik</title>
+<title>Hotel Tanishque | Premium Restaurant in Nashik</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#111;
+background:#0d0d0d;
 color:white;
 }
 
 header{
-background:linear-gradient(to right,#8B0000,#000);
-padding:20px;
+background:linear-gradient(to right,#7a0000,#000);
+padding:25px;
 text-align:center;
-font-size:28px;
-font-weight:700;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:38px;
+color:gold;
+margin:0;
+letter-spacing:2px;
+}
+
+.hero{
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;
+}
+
+.hero h2{
+font-size:42px;
+background:rgba(0,0,0,0.6);
+padding:15px 25px;
+border-radius:10px;
 color:gold;
 }
 
 .section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
-h2{
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:32px;
 color:gold;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
-p{
+.menu-box{
+background:#1a1a1a;
+padding:30px;
+margin:20px auto;
+max-width:600px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,215,0,0.15);
+}
+
+.menu-box h3{
+color:gold;
+margin-bottom:15px;
+}
+
+.menu-box p{
 margin:8px 0;
 font-size:18px;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 25px;
+margin-top:30px;
+padding:14px 30px;
 background:gold;
 color:black;
 text-decoration:none;
@@ -53,13 +92,13 @@ transition:0.3s;
 
 .btn:hover{
 background:white;
+transform:scale(1.05);
 }
 
 footer{
 background:#000;
-padding:20px;
+padding:25px;
 text-align:center;
-font-size:14px;
 color:#aaa;
 }
 </style>
@@ -68,41 +107,74 @@ color:#aaa;
 <body>
 
 <header>
-Hotel Tanishque – Nashik
+<h1>Hotel Tanishque – Nashik</h1>
 </header>
 
+<div class="hero">
+<h2>Authentic Maharashtrian Taste</h2>
+</div>
+
 <div class="section">
-<h2>⭐ Special Thali</h2>
+<h2>Our Signature Menu</h2>
+
+<div class="menu-box">
+<h3>⭐ Special Thali</h3>
 <p>Mutton Thali – ₹450</p>
 <p>Chicken Thali – ₹350</p>
 <p>Veg Thali – ₹250</p>
+</div>
 
-<h2>🥩 Popular Non-Veg</h2>
+<div class="menu-box">
+<h3>🥩 Popular Non-Veg</h3>
 <p>Mutton Fry – ₹300</p>
 <p>Chicken Handi (Full) – ₹600</p>
 <p>Mutton Handi (Full) – ₹1150</p>
+</div>
 
-<h2>🍛 Biryani</h2>
-<p>Mutton Matka Biryani (Full) – ₹1400</p>
+<div class="menu-box">
+<h3>🍛 Biryani</h3>
+<p>Mutton Matka Biryani – ₹1400</p>
 <p>Chicken Biryani – ₹280</p>
-
-<h2>🍞 Roti</h2>
-<p>Tandoori Roti – ₹20</p>
-<p>Butter Naan – ₹70</p>
+</div>
 
 <a href="hotel-tanishque-menu.pdf" class="btn" target="_blank">
 Download Full Menu (PDF)
 </a>
-</div>
 
-<div class="section" style="background:#1a1a1a;">
-<h2>📍 Location</h2>
-<p>Hotel Tanishque, Nashik</p>
 </div>
 
 <footer>
-© 2026 Hotel Tanishque | All Rights Reserved
+© 2026 Hotel Tanishque | Premium Family Restaurant in Nashik
 </footer>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919049990804?text=Hello%20Hotel%20Tanishque,%20I%20want%20to%20order%20food"
+   class="whatsapp-float" target="_blank">
+   💬
+</a>
 
+<style>
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+z-index:1000;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+</style>
 </body>
 </html>
