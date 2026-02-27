@@ -4,23 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hotel Tanishque | Ultra Luxury Dining Â· Nashik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --black:    #080508;
-  --deep:     #100810;
-  --card:     #150d15;
-  --wine:     #5a0a2a;
-  --wine2:    #7a1040;
-  --gold:     #d4a85a;
-  --gold2:    #f0d090;
-  --gold3:    #a07830;
-  --silver:   #c8c0d0;
-  --cream:    #f8f0e8;
-  --text:     #c0a8c0;
-  --muted:    #806878;
-  --border:   rgba(212,168,90,0.15);
-  --border2:  rgba(212,168,90,0.38);
+  --black: #080508;
+  --deep: #100810;
+  --card: #150d15;
+  --wine: #5a0a2a;
+  --wine2: #7a1040;
+  --gold: #d4a85a;
+  --gold2: #f0d090;
+  --gold3: #a07830;
+  --silver: #c8c0d0;
+  --cream: #f8f0e8;
+  --text: #c0a8c0;
+  --muted: #806878;
+  --border: rgba(212,168,90,0.15);
+  --border2: rgba(212,168,90,0.38);
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -225,7 +227,7 @@ nav.scrolled{
 section{padding:110px 6%;}
 .sec-header{text-align:center;margin-bottom:80px;}
 .sec-label{display:inline-block;font-size:0.62rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;position:relative;}
-.sec-label::before,.sec-label::after{content:'â';margin:0 10px;color:var(--gold3);}
+.sec-label::before,.sec-label::after{content:'â€”';margin:0 10px;color:var(--gold3);}
 .sec-title{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;color:var(--cream);line-height:1.1;margin-bottom:18px;}
 .sec-title em{font-style:italic;color:var(--gold);}
 .sec-desc{font-size:0.87rem;color:var(--muted);max-width:520px;margin:0 auto;line-height:2;}
@@ -365,7 +367,7 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:70px 6%
 .footer-links{list-style:none;}
 .footer-links li{margin-bottom:12px;}
 .footer-links a{color:var(--muted);text-decoration:none;font-size:0.8rem;letter-spacing:1px;transition:color 0.3s;display:flex;align-items:center;gap:8px;}
-.footer-links a::before{content:'âº';color:var(--gold3);}
+.footer-links a::before{content:'â€º';color:var(--gold3);}
 .footer-links a:hover{color:var(--gold);}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
 .footer-copy{font-size:0.7rem;color:var(--muted);letter-spacing:1px;}
@@ -418,7 +420,7 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:70px 6%
   .menu-tabs{width:100%;}
   .tab-btn{flex:1;padding:12px 8px;font-size:0.58rem;}
 }
-Â/* ââ SPECIAL FEATURED CARD ââ */Â.dish-card.featured {Â  grid-column: span 3;Â  background: linear-gradient(135deg, #1e0818 0%, #2a0a20 40%, #1a0612 100%);Â  border: 1px solid rgba(212,168,90,0.3);Â  padding: 36px;Â  position: relative;Â  overflow: hidden;Â}Â.dish-card.featured::before {Â  content:'';Â  position:absolute;top:0;left:0;right:0;height:3px;Â  background:linear-gradient(to right, transparent, var(--gold), var(--gold2), var(--gold), transparent);Â  opacity:1;Â}Â.dish-card.featured::after {Â  content:'';position:absolute;inset:0;Â  background:Â    radial-gradient(ellipse at 80% 20%, rgba(212,168,90,0.07) 0%, transparent 55%),Â    repeating-linear-gradient(118deg, transparent 0px, transparent 60px, rgba(212,168,90,0.025) 60px, rgba(212,168,90,0.025) 61px);Â  pointer-events:none;Â}Â.dish-card.featured:hover {Â  background: linear-gradient(135deg, #2a0a20 0%, #3a1030 40%, #220818 100%);Â  box-shadow: 0 0 50px rgba(90,10,42,0.4), 0 0 0 1px rgba(212,168,90,0.4);Â}Â.dish-card.featured .featured-inner {Â  display: grid;Â  grid-template-columns: 1fr auto;Â  gap: 24px;Â  align-items: center;Â  position: relative;Â  z-index: 1;Â}Â.dish-card.featured .dish-name {Â  font-size: 1.6rem;Â  background: linear-gradient(135deg, var(--gold3), var(--gold), var(--gold2));Â  -webkit-background-clip: text;Â  -webkit-text-fill-color: transparent;Â  background-clip: text;Â  margin-bottom: 10px;Â}Â.dish-card.featured .dish-desc {Â  font-size: 0.85rem;Â  line-height: 1.9;Â  color: var(--text);Â  margin-bottom: 20px;Â  max-width: 500px;Â}Â.dish-card.featured .featured-badge {Â  position: absolute;Â  top: 0px; left: 36px;Â  background: linear-gradient(135deg, var(--gold3), var(--gold));Â  color: var(--black);Â  font-size: 0.55rem;Â  letter-spacing: 3px;Â  text-transform: uppercase;Â  padding: 5px 16px;Â  font-weight: 600;Â}Â.dish-card.featured .featured-price-box {Â  text-align: center;Â  padding: 24px 30px;Â  border: 1px solid rgba(212,168,90,0.25);Â  background: rgba(0,0,0,0.3);Â  min-width: 160px;Â  position: relative;Â  z-index:1;Â}Â.dish-card.featured .featured-price-box .dish-price {Â  font-size: 2.2rem;Â  display:block;Â  margin-bottom: 4px;Â}Â.dish-card.featured .featured-price-box .dish-price span { font-size: 0.8rem; }Â.featured-highlights {Â  display: flex;Â  gap: 20px;Â  flex-wrap: wrap;Â  margin-top: 4px;Â}Â.feat-highlight {Â  display: flex;Â  align-items: center;Â  gap: 8px;Â  font-size: 0.68rem;Â  letter-spacing: 1.5px;Â  text-transform: uppercase;Â  color: var(--muted);Â}Â.feat-highlight::before { content:'â¦'; color: var(--gold3); font-size: 0.5rem; }Â@media(max-width:900px){Â  .dish-card.featured { grid-column: span 2; }Â  .dish-card.featured .featured-inner { grid-template-columns: 1fr; }Â}Â@media(max-width:600px){Â  .dish-card.featured { grid-column: span 1; }Â}Â
+Â/* â”€â”€ SPECIAL FEATURED CARD â”€â”€ */Â.dish-card.featured {Â grid-column: span 3;Â background: linear-gradient(135deg, #1e0818 0%, #2a0a20 40%, #1a0612 100%);Â border: 1px solid rgba(212,168,90,0.3);Â padding: 36px;Â position: relative;Â overflow: hidden;Â}Â.dish-card.featured::before {Â content:'';Â position:absolute;top:0;left:0;right:0;height:3px;Â background:linear-gradient(to right, transparent, var(--gold), var(--gold2), var(--gold), transparent);Â opacity:1;Â}Â.dish-card.featured::after {Â content:'';position:absolute;inset:0;Â background:Â radial-gradient(ellipse at 80% 20%, rgba(212,168,90,0.07) 0%, transparent 55%),Â repeating-linear-gradient(118deg, transparent 0px, transparent 60px, rgba(212,168,90,0.025) 60px, rgba(212,168,90,0.025) 61px);Â pointer-events:none;Â}Â.dish-card.featured:hover {Â background: linear-gradient(135deg, #2a0a20 0%, #3a1030 40%, #220818 100%);Â box-shadow: 0 0 50px rgba(90,10,42,0.4), 0 0 0 1px rgba(212,168,90,0.4);Â}Â.dish-card.featured .featured-inner {Â display: grid;Â grid-template-columns: 1fr auto;Â gap: 24px;Â align-items: center;Â position: relative;Â z-index: 1;Â}Â.dish-card.featured .dish-name {Â font-size: 1.6rem;Â background: linear-gradient(135deg, var(--gold3), var(--gold), var(--gold2));Â -webkit-background-clip: text;Â -webkit-text-fill-color: transparent;Â background-clip: text;Â margin-bottom: 10px;Â}Â.dish-card.featured .dish-desc {Â font-size: 0.85rem;Â line-height: 1.9;Â color: var(--text);Â margin-bottom: 20px;Â max-width: 500px;Â}Â.dish-card.featured .featured-badge {Â position: absolute;Â top: 0px; left: 36px;Â background: linear-gradient(135deg, var(--gold3), var(--gold));Â color: var(--black);Â font-size: 0.55rem;Â letter-spacing: 3px;Â text-transform: uppercase;Â padding: 5px 16px;Â font-weight: 600;Â}Â.dish-card.featured .featured-price-box {Â text-align: center;Â padding: 24px 30px;Â border: 1px solid rgba(212,168,90,0.25);Â background: rgba(0,0,0,0.3);Â min-width: 160px;Â position: relative;Â z-index:1;Â}Â.dish-card.featured .featured-price-box .dish-price {Â font-size: 2.2rem;Â display:block;Â margin-bottom: 4px;Â}Â.dish-card.featured .featured-price-box .dish-price span { font-size: 0.8rem; }Â.featured-highlights {Â display: flex;Â gap: 20px;Â flex-wrap: wrap;Â margin-top: 4px;Â}Â.feat-highlight {Â display: flex;Â align-items: center;Â gap: 8px;Â font-size: 0.68rem;Â letter-spacing: 1.5px;Â text-transform: uppercase;Â color: var(--muted);Â}Â.feat-highlight::before { content:'âœ¦'; color: var(--gold3); font-size: 0.5rem; }Â@media(max-width:900px){Â .dish-card.featured { grid-column: span 2; }Â .dish-card.featured .featured-inner { grid-template-columns: 1fr; }Â}Â@media(max-width:600px){Â .dish-card.featured { grid-column: span 1; }Â}Â
 
 /* FEATURED CARD */
 .dish-card.featured {
@@ -521,7 +523,7 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:70px 6%
       <span class="main-name">Tanishque</span>
     </h1>
     <p class="hero-sub">Premium Family Restaurant &nbsp;Â·&nbsp; Nashik</p>
-    <div class="hero-divider"><span class="hero-divider-icon">â¦</span></div>
+    <div class="hero-divider"><span class="hero-divider-icon">âœ¦</span></div>
     <div class="hero-cta">
       <a href="#menu" class="btn-gold">Explore Menu</a>
       <a href="https://wa.me/919049990804?text=Hello%20Hotel%20Tanishque%2C%20I%20want%20to%20book%20a%20table." class="btn-ghost" target="_blank">Reserve a Table</a>
@@ -533,18 +535,18 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:70px 6%
 <!-- OFFER BANNER -->
 <div class="offer-banner">
   <div class="offer-track">
-    <div class="offer-item"><span class="star">â¦</span> Mutton Matka Biryani â Nashik's Finest</div>
-    <div class="offer-item"><span class="star">â¦</span> Special Thali Starting â¹250 Only</div>
-    <div class="offer-item"><span class="star">â¦</span> Premium Family Dining Experience</div>
-    <div class="offer-item"><span class="star">â¦</span> Fresh Ingredients Â· Authentic Flavors</div>
-    <div class="offer-item"><span class="star">â¦</span> Order via WhatsApp: 9049990804</div>
-    <div class="offer-item"><span class="star">â¦</span> Chicken Handi Full â Chef's Specialty</div>
-    <div class="offer-item"><span class="star">â¦</span> Mutton Matka Biryani â Nashik's Finest</div>
-    <div class="offer-item"><span class="star">â¦</span> Special Thali Starting â¹250 Only</div>
-    <div class="offer-item"><span class="star">â¦</span> Premium Family Dining Experience</div>
-    <div class="offer-item"><span class="star">â¦</span> Fresh Ingredients Â· Authentic Flavors</div>
-    <div class="offer-item"><span class="star">â¦</span> Order via WhatsApp: 9049990804</div>
-    <div class="offer-item"><span class="star">â¦</span> Chicken Handi Full â Chef's Specialty</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Mutton Matka Biryani â€” Nashik's Finest</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Special Thali Starting â‚¹250 Only</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Premium Family Dining Experience</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Fresh Ingredients Â· Authentic Flavors</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Order via WhatsApp: 9049990804</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Chicken Handi Full â€” Chef's Specialty</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Mutton Matka Biryani â€” Nashik's Finest</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Special Thali Starting â‚¹250 Only</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Premium Family Dining Experience</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Fresh Ingredients Â· Authentic Flavors</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Order via WhatsApp: 9049990804</div>
+    <div class="offer-item"><span class="star">âœ¦</span> Chicken Handi Full â€” Chef's Specialty</div>
   </div>
 </div>
 
@@ -786,4 +788,234 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:70px 6%
         <div class="dish-card"><div class="dish-name">Butter Paratha</div><div class="dish-desc">Flaky paratha with generous butter topping.</div><div class="dish-footer"><div class="dish-price">&#8377;70</div><span class="dish-tag tag-veg">Veg</span></div></div>
         <div class="dish-card"><div class="dish-name">Butter Roti</div><div class="dish-desc">Soft roti with butter — simple &amp; delicious.</div><div class="dish-footer"><div class="dish-price">&#8377;40</div><span class="dish-tag tag-veg">Veg</span></div></div>
         <div class="dish-card"><div class="dish-name">Aloo Paratha</div><div class="dish-desc">Stuffed potato paratha served with butter.</div><div class="dish-footer"><div class="dish-price">&#8377;120</div><span class="dish-tag tag-veg">Veg</span></div></div>
-        <div class="dish-card"><div class="dish-name">Gobhi Paratha</div><div class="dish-
+        <div class="dish-card"><div class="dish-name">Gobhi Paratha</div><div class="dish-desc">Stuffed cauliflower paratha, fresh &amp; crispy.</div><div class="dish-footer"><div class="dish-price">&#8377;120</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Paneer Paratha</div><div class="dish-desc">Stuffed paneer paratha — rich &amp; flavourful.</div><div class="dish-footer"><div class="dish-price">&#8377;150</div><span class="dish-tag tag-veg">Veg</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RICE -->
+  <div class="menu-panel" id="panel-rice">
+    <div class="menu-category reveal">
+      <div class="menu-cat-header"><div class="cat-icon-wrap">&#127860;</div><h3 class="cat-title">Rice</h3><div class="cat-line"></div></div>
+      <div class="menu-grid">
+        <div class="dish-card"><div class="dish-name">Steam Rice Full</div><div class="dish-desc">Plain steamed basmati rice. Full portion.</div><div class="dish-footer"><div class="dish-price">&#8377;120</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Steam Rice Half</div><div class="dish-desc">Plain steamed basmati rice. Half portion.</div><div class="dish-footer"><div class="dish-price">&#8377;60</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Jeera Rice Full</div><div class="dish-desc">Cumin tempered basmati rice. Full portion.</div><div class="dish-footer"><div class="dish-price">&#8377;140</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Jeera Rice Half</div><div class="dish-desc">Cumin tempered basmati rice. Half portion.</div><div class="dish-footer"><div class="dish-price">&#8377;80</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Masala Rice</div><div class="dish-desc">Spiced masala rice with whole spices.</div><div class="dish-footer"><div class="dish-price">&#8377;250</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Veg Pulao</div><div class="dish-desc">Fragrant basmati rice with mixed vegetables.</div><div class="dish-footer"><div class="dish-price">&#8377;270</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Veg Biryani</div><div class="dish-desc">Dum-cooked vegetable biryani with saffron.</div><div class="dish-footer"><div class="dish-price">&#8377;280</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Dal Khichadi</div><div class="dish-desc">Comforting dal &amp; rice cooked together.</div><div class="dish-footer"><div class="dish-price">&#8377;240</div><span class="dish-tag tag-veg">Veg</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOUP -->
+  <div class="menu-panel" id="panel-soup">
+    <div class="menu-category reveal">
+      <div class="menu-cat-header"><div class="cat-icon-wrap">&#127963;</div><h3 class="cat-title">Soup &amp; Salad</h3><div class="cat-line"></div></div>
+      <div class="menu-grid">
+        <div class="dish-card"><div class="dish-name">Tomato Soup</div><div class="dish-desc">Classic creamy tomato soup with croutons.</div><div class="dish-footer"><div class="dish-price">&#8377;180</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Veg Manchow Soup</div><div class="dish-desc">Thick Indo-Chinese manchow soup with vegetables.</div><div class="dish-footer"><div class="dish-price">&#8377;180</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Chicken Manchow Soup</div><div class="dish-desc">Thick manchow soup with tender chicken pieces.</div><div class="dish-footer"><div class="dish-price">&#8377;220</div><span class="dish-tag tag-nonveg">Non-Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Chicken Clear Soup</div><div class="dish-desc">Light, clear chicken broth with herbs.</div><div class="dish-footer"><div class="dish-price">&#8377;140</div><span class="dish-tag tag-nonveg">Non-Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Green Salad</div><div class="dish-desc">Fresh mixed green vegetables salad.</div><div class="dish-footer"><div class="dish-price">&#8377;80</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Veg Raita</div><div class="dish-desc">Chilled yoghurt with fresh vegetables &amp; spices.</div><div class="dish-footer"><div class="dish-price">&#8377;100</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Special Tea</div><div class="dish-desc">Our special masala chai.</div><div class="dish-footer"><div class="dish-price">&#8377;20</div><span class="dish-tag tag-veg">Veg</span></div></div>
+        <div class="dish-card"><div class="dish-name">Lemon Tea</div><div class="dish-desc">Refreshing lemon tea.</div><div class="dish-footer"><div class="dish-price">&#8377;10</div><span class="dish-tag tag-veg">Veg</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-download reveal">
+    <a href="./hotel-tanishque-menu.pdf" class="btn-download" download>
+      <svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5v-2z"/></svg>
+      Download Full Menu (PDF)
+    </a>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="sec-header reveal">
+    <span class="sec-label">Our Gallery</span>
+    <h2 class="sec-title">A Feast for the <em>Eyes</em></h2>
+    <p class="sec-desc">A glimpse into the flavors, ambiance and craftsmanship that define Hotel Tanishque.</p>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g-item g-large"><img loading="lazy" src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=800&q=80" alt="Biryani"><div class="g-overlay"><span>Matka Biryani</span></div></div>
+    <div class="g-item g-med"><img loading="lazy" src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&q=80" alt="Mutton"><div class="g-overlay"><span>Mutton Handi</span></div></div>
+    <div class="g-item g-small"><img loading="lazy" src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=80" alt="Thali"><div class="g-overlay"><span>Royal Thali</span></div></div>
+    <div class="g-item g-med"><img loading="lazy" src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&q=80" alt="Naan"><div class="g-overlay"><span>Fresh Breads</span></div></div>
+    <div class="g-item g-small"><img loading="lazy" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500&q=80" alt="Dining"><div class="g-overlay"><span>Fine Dining</span></div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img class="about-img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Restaurant">
+      <div class="about-img-frame"></div>
+      <div class="about-img-tag"><span class="big">24+</span><span class="small">Years of Excellence</span></div>
+    </div>
+    <div class="about-text reveal reveal-delay-2">
+      <span class="sec-label">Our Story</span>
+      <h2 class="sec-title" style="text-align:left;margin-bottom:24px;">The <em>Art</em> of<br>True Hospitality</h2>
+      <p>Hotel Tanishque was born in <strong>2001</strong> from a simple dream â€” to bring <strong>authentic Maharashtrian flavors</strong> to the heart of Nashik with the warmth of home cooking and the elegance of fine dining.</p>
+      <p>For over <strong>24 years</strong>, our chefs have been slow-cooking recipes that honor tradition â€” from the iconic <strong>Mutton Matka Biryani</strong> sealed in clay to the rich, aromatic Handi gravies that simmer for hours.</p>
+      <p>We believe every meal should be a <strong>celebration</strong>. Whether it's a family gathering, a special occasion, or a quiet evening â€” Hotel Tanishque is your home away from home.</p>
+      <div class="features-list">
+        <div class="feature-item"><span class="feature-dot"></span>Authentic Recipes</div>
+        <div class="feature-item"><span class="feature-dot"></span>Farm-Fresh Ingredients</div>
+        <div class="feature-item"><span class="feature-dot"></span>Traditional Clay Cooking</div>
+        <div class="feature-item"><span class="feature-dot"></span>Family-Friendly</div>
+        <div class="feature-item"><span class="feature-dot"></span>Hygienic Kitchen</div>
+        <div class="feature-item"><span class="feature-dot"></span>Home Delivery</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="sec-header reveal">
+    <span class="sec-label">Guest Reviews</span>
+    <h2 class="sec-title">Words of <em>Praise</em></h2>
+    <p class="sec-desc">Our guests say it best. Here's what families and food lovers are saying about Hotel Tanishque.</p>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars"><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span></div>
+      <p class="review-text">The Mutton Matka Biryani is absolutely divine! When they open the clay pot at the table, the aroma alone is worth every rupee. Best biryani in Nashik, no doubt.</p>
+      <div class="reviewer"><div class="reviewer-avatar">R</div><div><div class="reviewer-name">Rahul Jadhav</div><div class="reviewer-meta">Nashik Â· Regular Guest</div></div></div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars"><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span></div>
+      <p class="review-text">Celebrated our anniversary here and the experience was truly royal. The Chicken Handi was rich and perfectly spiced. The staff treated us like family.</p>
+      <div class="reviewer"><div class="reviewer-avatar">P</div><div><div class="reviewer-name">Priya Kulkarni</div><div class="reviewer-meta">Nashik Â· Anniversary Dinner</div></div></div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-stars"><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span><span class="star-icon">â˜…</span></div>
+      <p class="review-text">Brought my whole family for a Sunday lunch. The Mutton Thali was a complete meal and the Tandoori Roti was crispy and fresh. Highly recommend!</p>
+      <div class="reviewer"><div class="reviewer-avatar">S</div><div><div class="reviewer-name">Suresh Patil</div><div class="reviewer-meta">Pune Â· Visiting Nashik</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section" id="location">
+  <div class="sec-header reveal">
+    <span class="sec-label">Find Us</span>
+    <h2 class="sec-title">Visit <em>Us</em> in Nashik</h2>
+    <div class="gold-rule"></div>
+  </div>
+  <div class="location-grid reveal">
+    <div class="location-info">
+      <h3>Hotel <em>Tanishque</em></h3>
+      <p style="font-size:0.8rem;color:var(--muted);">Premium Family Restaurant, Nashik</p>
+      <div class="location-line"></div>
+      <div class="info-item"><div class="info-icon">ðŸ“ </div><div><div class="info-label">Address</div><div class="info-value">Hotel Tanishque,<br>Nashik, Maharashtra, India</div></div></div>
+      <div class="info-item"><div class="info-icon">ðŸ“ž</div><div><div class="info-label">Phone / WhatsApp</div><div class="info-value"><a href="tel:+919049990804">+91 9049990804</a><br><a href="https://wa.me/919049990804?text=Hello%20Hotel%20Tanishque%2C%20I%20want%20to%20order%20food." target="_blank">Chat on WhatsApp</a></div></div></div>
+      <div class="info-item"><div class="info-icon">ðŸ• </div><div><div class="info-label">Opening Hours</div><div class="info-value"><div class="hours-grid"><div class="hours-item"><span class="hours-day">Mon â€“ Fri</span><span class="hours-time">11am â€“ 10pm</span></div><div class="hours-item"><span class="hours-day">Saturday</span><span class="hours-time">11am â€“ 11pm</span></div><div class="hours-item"><span class="hours-day">Sunday</span><span class="hours-time">10am â€“ 10pm</span></div><div class="hours-item"><span class="hours-day">Holidays</span><span class="hours-time">11am â€“ 10pm</span></div></div></div></div></div>
+      <div style="margin-top:36px;"><a href="https://wa.me/919049990804?text=Hello%20Hotel%20Tanishque%2C%20I%20want%20to%20order%20food." class="btn-gold" target="_blank" style="display:inline-flex;align-items:center;gap:10px;position:relative;z-index:1;">ðŸ“² &nbsp;Order on WhatsApp</a></div>
+    </div>
+    <div class="map-embed">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120703.50821474387!2d73.72692!3d20.00116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeba00bd72ca7%3A0x74bd94f8c6e28c3!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-overlay-badge"><span>Our Location</span><p>Nashik, Maharashtra</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="logo">Hotel <span>Tanishque</span></a>
+      <p>Where tradition meets elegance. Every dish is a story, every meal a memory. We welcome you with the warmth of Nashik's finest hospitality since 2001.</p>
+      <div class="social-links">
+        <a href="#" class="social-btn" aria-label="Facebook">f</a>
+        <a href="https://wa.me/919049990804" class="social-btn" target="_blank" aria-label="WhatsApp">W</a>
+        <a href="#" class="social-btn" aria-label="Instagram">âœ¦</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Specialities</h4>
+      <ul class="footer-links">
+        <li><a href="#menu">Mutton Matka Biryani</a></li>
+        <li><a href="#menu">Chicken Handi</a></li>
+        <li><a href="#menu">Special Thali</a></li>
+        <li><a href="#menu">Mutton Rassa</a></li>
+        <li><a href="./hotel-tanishque-menu.pdf" download>Download Menu PDF</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">Â© 2026 Hotel Tanishque | Premium Family Restaurant in Nashik</p>
+    <span class="footer-badge">âœ¦ Since 2001 âœ¦</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919049990804?text=Hello%20Hotel%20Tanishque%2C%20I%20want%20to%20order%20food." class="wa-float" target="_blank" aria-label="WhatsApp">
+  <div class="wa-tooltip">Order on WhatsApp</div>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// CURSOR
+const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx-3.5+'px';cursor.style.top=my-3.5+'px';});
+(function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx-17+'px';ring.style.top=ry-17+'px';requestAnimationFrame(animRing);})();
+document.querySelectorAll('a,button,.dish-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{ring.style.transform='scale(1.8)';ring.style.borderColor='rgba(212,168,90,0.8)';});
+  el.addEventListener('mouseleave',()=>{ring.style.transform='scale(1)';ring.style.borderColor='rgba(212,168,90,0.5)';});
+});
+
+// NAVBAR
+window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>80));
+
+// HAMBURGER
+function toggleMenu(){
+  const l=document.querySelector('.nav-links');
+  const open=l.style.display==='flex';
+  l.style.cssText=open?'':'display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:rgba(8,5,8,0.98);padding:30px;gap:20px;backdrop-filter:blur(20px);border-bottom:1px solid rgba(212,168,90,0.15);z-index:999;';
+}
+
+// TABS
+function showTab(id,btn){
+  document.querySelectorAll('.menu-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// REVEAL
+new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.08}).observe&&
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.08}).observe(el));
+
+// COUNTERS
+function countUp(){
+  document.querySelectorAll('.stat-num').forEach(el=>{
+    const t=+el.dataset.target;let c=0;
+    const u=()=>{c+=t/55;if(c>=t){el.textContent=t+(t===4?'.8+':'+');return;}el.textContent=Math.floor(c)+(t>10?'+':'');requestAnimationFrame(u);};u();
+  });
+}
+new IntersectionObserver(e=>{if(e[0].isIntersecting){countUp();}},{threshold:0.4}).observe(document.querySelector('.stats'));
+</script>
+</body>
+</html>
